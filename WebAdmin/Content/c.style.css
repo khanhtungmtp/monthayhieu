@@ -1,0 +1,58 @@
+﻿body {
+   font-family:Tahoma;
+   background-color:#bbff80;
+}
+
+.container {
+    background-color:#fff;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    background-color:#ff6a00;
+    color:#ffffff;
+    padding:20px 0;
+    height:75px;
+}
+
+footer {
+    text-align: center;
+    background-color: #b6ff00;
+    color: #ffffff;
+    padding: 20px 0;
+    height:75px;
+}
+
+.menu > div{
+    background-color:orange;
+    min-height:calc(100vh - 200px);
+}
+
+.menu > div ul{
+    list-style:none;
+    padding:0;
+    width:100%;
+}
+
+.menu > div ul li {
+    margin:10px 0;
+
+}
+
+.menu > div ul li .btn {
+    width: 100%;
+}
+
+.content{
+    background-color:yellow;
+}
+
+.content .login-form{
+    max-width:400px;
+    margin:auto;
+    text-align:center;
+}
+.content .login-form .fa{
+    width:15px;
+}

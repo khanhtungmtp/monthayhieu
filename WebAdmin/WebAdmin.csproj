@@ -1,0 +1,293 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{625E3795-0D6B-4A05-94A8-726595E29CFB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAdmin</RootNamespace>
+    <AssemblyName>WebAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Connected Services\Service\WebAdmin.Service.AddArticleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Service\WebAdmin.Service.ChangePasswordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Service\WebAdmin.Service.CheckLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Service\WebAdmin.Service.GetArticleDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Service\WebAdmin.Service.GetArticleListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Service\WebAdmin.Service.UdateArticleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Service\WebService.disco" />
+    <None Include="Connected Services\Service\configuration91.svcinfo" />
+    <None Include="Connected Services\Service\configuration.svcinfo" />
+    <None Include="Connected Services\Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Content\a.bootstrap.css" />
+    <Content Include="Content\b.font-awesome.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Demo.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\1.popper.js" />
+    <Content Include="Scripts\2.jquery-3.0.0.js" />
+    <Content Include="Scripts\3.bootstrap.js" />
+    <Content Include="Scripts\4.script.js" />
+    <Content Include="tinyeditor\0.jquery.1.9.1.min.js" />
+    <Content Include="tinyeditor\1.jquery.tinymce.min.js" />
+    <Content Include="tinyeditor\2.tinymce.min.js" />
+    <Content Include="tinyeditor\3.tinymce.customfunction.js" />
+    <Content Include="tinyeditor\license.txt" />
+    <Content Include="tinyeditor\plugins\advlist\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\anchor\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\autolink\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\autoresize\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\autosave\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\bbcode\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\charmap\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\code\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\contextmenu\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\directionality\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="tinyeditor\plugins\emoticons\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\example\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\example_dependency\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\fullpage\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\fullscreen\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\hr\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\image\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\importcss\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\layer\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\link\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\lists\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\media\moxieplayer.swf" />
+    <Content Include="tinyeditor\plugins\media\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\noneditable\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\pagebreak\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\paste\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\preview\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\print\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\save\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\searchreplace\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\spellchecker\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\tabfocus\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\table\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\template\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\textcolor\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="tinyeditor\plugins\visualblocks\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\visualchars\plugin.min.js" />
+    <Content Include="tinyeditor\plugins\wordcount\plugin.min.js" />
+    <Content Include="tinyeditor\skins\lightgray\content.inline.min.css" />
+    <Content Include="tinyeditor\skins\lightgray\content.min.css" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon-small.svg" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon.svg" />
+    <Content Include="tinyeditor\skins\lightgray\img\anchor.gif" />
+    <Content Include="tinyeditor\skins\lightgray\img\loader.gif" />
+    <Content Include="tinyeditor\skins\lightgray\img\object.gif" />
+    <Content Include="tinyeditor\skins\lightgray\img\trans.gif" />
+    <Content Include="tinyeditor\skins\lightgray\img\wline.gif" />
+    <Content Include="tinyeditor\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="tinyeditor\skins\lightgray\skin.min.css" />
+    <Content Include="tinyeditor\themes\modern\theme.min.js" />
+    <Content Include="Web.config" />
+    <None Include="Connected Services\Service\WebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\Account.cs" />
+    <Compile Include="class\Article.cs" />
+    <Compile Include="Connected Services\Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\c.style.css" />
+    <None Include="packages.config" />
+    <Content Include="tinyeditor\langs\readme.md" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon-small.eot" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon-small.ttf" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon-small.woff" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon.eot" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon.ttf" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\icomoon.woff" />
+    <Content Include="tinyeditor\skins\lightgray\fonts\readme.md" />
+    <Content Include="tinyeditor\z_HuongDan.pdf" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\Service\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62698</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62698/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

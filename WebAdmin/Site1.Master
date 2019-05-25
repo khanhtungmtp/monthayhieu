@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebAdmin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   
+    <link href="Content/a.bootstrap.css" rel="stylesheet" />
+    <link href="Content/b.font-awesome.css" rel="stylesheet" />
+    <link href="Content/c.style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <h1>Đầu trang</h1>
+                    </header>
+                    <main class="row">
+                        <div class="col-3 menu">
+                            <div class="menu">
+                                <div>
+                                    <h1>Menu</h1>
+                                    <ul>
+                                        <li>
+                                            <a class="btn btn-success" href="Login.asspx">Đăng nhập</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-success" href="ArticleList.aspx">Tin tức</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-success" href="AccountList.aspx">Tài khoản</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 content row">
+                            <asp:ContentPlaceHolder ID="content" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </main>
+                    <footer>
+                        <h1>Cuối trang</h1>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div id="script">
+            <script src="Scripts/1.popper.js"></script>
+            <script src="Scripts/2.jquery-3.0.0.js"></script>
+            <script src="Scripts/3.bootstrap.js"></script>
+            <script src="Scripts/4.script.js"></script>
+        </div>
+    </form>
+</body>
+</html>
