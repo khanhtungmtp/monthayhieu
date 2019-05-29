@@ -29,12 +29,7 @@ namespace WebAdmin
             //dich tu chuoi sang doi tuong
             List<Article> item = js.Deserialize<List<Article>>(json);
 
-            Repeater_Main.DataSource = item.ToList()
-                
-                
-                
-                
-                ;
+            Repeater_Main.DataSource = item.ToList();
             Repeater_Main.DataBind();
 
         }

@@ -26,11 +26,18 @@
                                     <h1>Menu</h1>
                                     <ul>
                                         <li>
-                                            <a class="btn btn-success" href="Login.asspx">Đăng nhập</a>
+                                            <asp:LinkButton class="btn btn-success" ID="LinkButton_Login" Text="Đăng nhập" runat="server" OnClick="LinkButton_Login_Click"></asp:LinkButton>
+                                         
                                         </li>
+                                        
+                                        <li>
+                                            <a class="btn btn-success" href="Default.aspx">Trang chủ</a>
+                                        </li>
+
                                         <li>
                                             <a class="btn btn-success" href="ArticleList.aspx">Tin tức</a>
                                         </li>
+
                                         <li>
                                             <a class="btn btn-success" href="AccountList.aspx">Tài khoản</a>
                                         </li>

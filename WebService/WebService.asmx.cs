@@ -142,7 +142,7 @@ namespace WebService
             else
             {
                 dbItem.Title = item.Title;
-                dbItem.Desciption = item.Desciption;
+                dbItem.Description = item.Description;
                 dbItem.Avatar = item.Avatar;
                 dbItem.Content = item.Content;
                 dbItem.CreateTime = item.CreateTime;
